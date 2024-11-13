@@ -613,3 +613,144 @@ console.log(carsIndex)
 
 var lastIndex = cars.lastIndexOf('MG');
 console.log(lastIndex);
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome in ASYNC JS</h1>
+    <button id="stopBtn">Stop</button>
+
+    <script>
+        // SETTIMEOUT 1000= 1sec 
+        // setTimeout(function(){
+        //     console.log("Hello world")
+        // }, 5000)
+        // console.log("a")
+        // console.log("b")
+        // console.log("c")
+        // console.log("d")
+        // console.log("e")
+        // console.log("f")
+        // console.log("g")
+        // console.log("h")
+        // setTimeout(function(){
+        //     console.log("HEllo in ASYNC JS")
+        // }, 2000)
+        // console.log("i")
+        // console.log("j")
+        // console.log("k")
+        // console.log("l")
+        // console.log("m")
+        // console.log("n")
+        // console.log("o")
+
+
+        // // Example 2
+        // const sayMe = function(){
+        //     console.log("Muhammad Moosa");
+        // }
+
+        // setTimeout(sayMe, 3000);
+
+        // // Example 3
+        // const changeText = function(){
+        //     document.querySelector("h1").innerHTML = "Change text by Asyc JS"
+        // }
+
+        // let timout = setTimeout(changeText, 2000)
+        // // clearTimeout(timout)
+
+        // document.querySelector("#stopBtn").addEventListener('click', function(){
+        //     clearTimeout(timout)
+        //     console.log("stopped")
+        // })
+
+            // setInterval
+
+        // const sayMe = function(){
+        //     console.log("Muhammad Moosa");
+        // }
+        
+        // setInterval(sayMe, 2000);
+
+        // const sayHello = function(){
+        //     console.log("Hello", Date.now())
+        // }
+
+        // let interval = setInterval(sayHello, 3000)
+
+        // clearInterval(interval)
+
+
+        const sayHello = function(str){
+            console.log(str, Date.now())
+        }
+
+        let interval = setInterval(sayHello, 3000, "Hello World")
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #notify{
+            display: none;
+            background-color: darkcyan;
+            color: aliceblue;
+            position: fixed;
+            border-radius: 10px;
+            right: 10px;
+            bottom: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showNotification()">Show Notification</button>
+    <div id="notify"></div>
+    <script>
+        function showNotification(){
+            let notification = document.querySelector("#notify")
+            notification.textContent = "Action Successfull!";
+            notification.style.display = 'block';
+
+            setTimeout(function(){
+                notification.style.display = 'none';
+            }, 4000)
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
